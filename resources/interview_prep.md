@@ -4,30 +4,30 @@
 
 SOC analyst interviews test three things:
 technical knowledge, analytical thinking, and communication.
-You need to pass all three — not just the technical part.
+You need to pass all three not just the technical part.
 
 ---
 
 ## The 3 Interview Types You Will Face
 
-### Type 1 — Technical Screen (Phone/Video)
+### Type 1 Technical Screen (Phone/Video)
 - 30–45 minutes
 - Basic networking, security fundamentals, SOC operations
 - They want to know if you speak the language
 
-### Type 2 — Technical Panel (In Person/Video)
+### Type 2 Technical Panel (In Person/Video)
 - 60–90 minutes
-- Scenario-based questions, tool knowledge, incident response
+- Scenario based questions, tool knowledge, incident response
 - They want to know if you can think like an analyst
 
-### Type 3 — Behavioural (HR Round)
+### Type 3 Behavioural (HR Round)
 - 30–45 minutes
 - STAR method answers, culture fit, communication
 - They want to know if you'll be a good teammate
 
 ---
 
-## Must-Know Technical Topics
+## Must Know Technical Topics
 
 ### Networking Fundamentals
 ```
@@ -85,12 +85,12 @@ You need to pass all three — not just the technical part.
 ```
 Answer framework:
 1. Acknowledge the alert in the ticketing system
-2. Review the alert details — source IP, destination,
+2. Review the alert details source IP, destination,
    rule triggered, timestamp
 3. Check for false positive indicators
-4. Enrich the IOCs — VirusTotal, AbuseIPDB, Shodan
-5. Correlate with other alerts — is this isolated?
-6. Contain if confirmed — block IP, isolate host
+4. Enrich the IOCs VirusTotal, AbuseIPDB, Shodan
+5. Correlate with other alerts is this isolated?
+6. Contain if confirmed block IP, isolate host
 7. Document every action taken
 8. Escalate to Tier 2 if needed with full triage notes
 ```
@@ -104,8 +104,8 @@ Answer framework:
 Virus: attaches to a legitimate file and requires
        human action to spread
 
-Worm: self-replicates across networks without
-      human interaction — more dangerous at scale
+Worm: self replicates across networks without
+      human interaction more dangerous at scale
 ```
 
 ---
@@ -160,11 +160,11 @@ Layer 1 - Physical     - Cables, hardware
 
 ```
 IDS (Intrusion Detection System):
-- Monitors and alerts — does not block
-- Passive — it watches
+- Monitors and alerts does not block
+- Passive it watches
 
 IPS (Intrusion Prevention System):
-- Monitors and blocks — active response
+- Monitors and blocks active response
 - Can stop attacks in real time
 ```
 
@@ -175,7 +175,7 @@ IPS (Intrusion Prevention System):
 
 ```
 1. Do not click any links or open attachments
-2. Analyse the email headers — check sending IP,
+2. Analyse the email headers check sending IP,
    Reply-To, SPF/DKIM status
 3. Check the sender domain on VirusTotal
 4. Check any links on VirusTotal and URLScan.io
@@ -253,7 +253,7 @@ Always ask questions — it shows genuine interest:
 ## Day Before Interview Checklist
 
 ```
-[ ] Review your portfolio projects — know every detail
+[ ] Review your portfolio projects know every detail
 [ ] Review the company's recent security news
 [ ] Prepare 3 STAR method answers
 [ ] Review OSI model, CIA Triad, incident response steps
