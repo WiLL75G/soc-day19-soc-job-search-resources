@@ -44,35 +44,35 @@ You need to pass all three not just the technical part.
 
 ### Security Fundamentals
 ```
-- CIA Triad — Confidentiality, Integrity, Availability
-- Defence in depth — layered security approach
-- Least privilege — give only the access needed
-- Zero trust — never trust, always verify
-- Encryption — symmetric vs asymmetric
-- Hashing — MD5, SHA256 — what they are and why they matter
-- PKI — certificates and how HTTPS works
-- MFA — types and why it matters
+- CIA Triad Confidentiality, Integrity, Availability
+- Defence in depth layered security approach
+- Least privilege give only the access needed
+- Zero trust never trust, always verify
+- Encryption symmetric vs asymmetric
+- Hashing MD5, SHA256 what they are and why they matter
+- PKI certificates and how HTTPS works
+- MFA types and why it matters
 ```
 
 ### SOC Operations
 ```
-- Alert triage — P1, P2, P3, P4 severity levels
-- True positive vs false positive — how to determine
-- Escalation — when and how to escalate
-- Incident response — Prepare, Identify, Contain,
+- Alert triage P1, P2, P3, P4 severity levels
+- True positive vs false positive how to determine
+- Escalation when and how to escalate
+- Incident response Prepare, Identify, Contain,
   Eradicate, Recover, Lessons Learned (PICERL)
-- Chain of custody — preserving evidence
-- Ticketing — logging every action taken
+- Chain of custody preserving evidence
+- Ticketing logging every action taken
 ```
 
 ### Tools Knowledge
 ```
-- SIEM — Splunk, Microsoft Sentinel, IBM QRadar
-- EDR — CrowdStrike, Carbon Black, Microsoft Defender
-- Wireshark — packet capture and analysis
-- Nmap — port scanning and host discovery
-- VirusTotal — malware and IOC analysis
-- MITRE ATT&CK — framework for adversary techniques
+- SIEM Splunk, Microsoft Sentinel, IBM QRadar
+- EDR CrowdStrike, Carbon Black, Microsoft Defender
+- Wireshark packet capture and analysis
+- Nmap port scanning and host discovery
+- VirusTotal malware and IOC analysis
+- MITRE ATT&CK framework for adversary techniques
 ```
 
 ---
@@ -213,7 +213,7 @@ A — Action: What did you specifically do
 R — Result: What was the outcome
 ```
 
-### Example — "Tell me about a time you worked under pressure"
+### Example "Tell me about a time you worked under pressure"
 
 ```
 S: During my home lab project I was simulating a
@@ -236,7 +236,7 @@ R: I documented a full attack chain from brute force
 
 ## Questions to Ask the Interviewer
 
-Always ask questions — it shows genuine interest:
+Always ask questions it shows genuine interest:
 
 ```
 1. What does a typical day look like for a Tier 1 analyst here?
