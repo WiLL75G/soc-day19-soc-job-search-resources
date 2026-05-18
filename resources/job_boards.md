@@ -4,11 +4,11 @@
 
 ---
 
-### Tier 1 — Best for Entry Level SOC Roles
+### Tier 1 Best for Entry Level SOC Roles
 
 | Platform | URL | Why Use It |
 |---|---|---|
-| **LinkedIn** | linkedin.com/jobs | Largest network — recruiters actively search here |
+| **LinkedIn** | linkedin.com/jobs | Largest network recruiters actively search here |
 | **Indeed** | indeed.com | High volume of Tier 1 SOC postings |
 | **CyberSecJobs** | cybersecjobs.com | Dedicated cybersecurity job board |
 | **Dice** | dice.com | Strong for tech and security roles |
@@ -20,7 +20,7 @@
 
 | Platform | URL | Why Use It |
 |---|---|---|
-| **ClearanceJobs** | clearancejobs.com | Cleared roles — great for government SOC |
+| **ClearanceJobs** | clearancejobs.com | Cleared roles great for government SOC |
 | **Cybersecurity Ventures** | cybersecurityventures.com/jobs | Industry-specific listings |
 | **InfoSec Jobs** | infosec-jobs.com | Dedicated InfoSec board |
 | **SANS Jobs** | jobs.sans.org | High quality roles from SANS community |
@@ -32,10 +32,10 @@
 
 | Platform | URL | Why Use It |
 |---|---|---|
-| **Twitter/X** | #CyberSecJobs #Hiring | Real-time job posts from hiring managers |
+| **Twitter/X** | #CyberSecJobs #Hiring | Real time job posts from hiring managers |
 | **Discord** | TryHackMe, Blue Team Labs | Community job channels |
 | **Reddit** | r/cybersecurity r/netsec | Job posts and referrals |
-| **GitHub** | github.com | Your portfolio lives here — recruiters come to you |
+| **GitHub** | github.com | Your portfolio lives here recruiters come to you |
 
 ---
 
@@ -64,7 +64,7 @@ Set up daily job alerts on these platforms:
 
 **LinkedIn:**
 - Go to Jobs → Search → "SOC Analyst"
-- Click "Set Alert" — Daily frequency
+- Click "Set Alert" Daily frequency
 - Add your location + Remote option
 
 **Indeed:**
@@ -94,14 +94,14 @@ RULE 4: Apply to 5-10 roles per day minimum
          Volume matters at the entry level
 
 RULE 5: Track every application
-         Use a spreadsheet — company, role, date, status
+         Use a spreadsheet company, role, date, status
 ```
 
 ---
 
 ## Companies That Hire Entry Level SOC Analysts
 
-### MSSPs (Managed Security Service Providers) — Best for Entry Level
+### MSSPs (Managed Security Service Providers) Best for Entry Level
 
 - **Secureworks**
 - **Arctic Wolf**
@@ -122,7 +122,7 @@ RULE 5: Track every application
 - **CrowdStrike**
 - **Splunk**
 
-### Financial Sector — High Demand for SOC Analysts
+### Financial Sector High Demand for SOC Analysts
 
 - **JP Morgan Chase**
 - **Bank of America**
