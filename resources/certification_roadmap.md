@@ -8,7 +8,7 @@ unlock doors that experience alone cannot open yet.
 
 ---
 
-## Phase 1 — Foundation (Do These First)
+## Phase 1 Foundation (Do These First)
 
 ### CompTIA Security+
 | Field | Detail |
@@ -28,7 +28,7 @@ unlock doors that experience alone cannot open yet.
 | **Cost** | ~$338 USD |
 | **Difficulty** | Beginner |
 | **Time to Prepare** | 1–2 months |
-| **Why Get It** | Proves networking fundamentals — critical for SOC work |
+| **Why Get It** | Proves networking fundamentals critical for SOC work |
 | **Study Resource** | Professor Messer (free), Mike Meyers Udemy course |
 | **Exam Code** | N10-009 |
 
@@ -42,7 +42,7 @@ unlock doors that experience alone cannot open yet.
 | **Cost** | ~$392 USD |
 | **Difficulty** | Intermediate |
 | **Time to Prepare** | 2–3 months |
-| **Why Get It** | Directly maps to SOC analyst role — threat detection focus |
+| **Why Get It** | Directly maps to SOC analyst role threat detection focus |
 | **Study Resource** | Mike Chapple Udemy, CompTIA study guide |
 | **Exam Code** | CS0-003 |
 
@@ -51,15 +51,15 @@ unlock doors that experience alone cannot open yet.
 ### Blue Team Labs Online (BTLO)
 | Field | Detail |
 |---|---|
-| **Cost** | Free — Paid tier available |
+| **Cost** | Free Paid tier available |
 | **Difficulty** | Beginner — Advanced |
 | **Time to Complete** | Ongoing |
-| **Why Get It** | Hands-on SOC scenarios — direct lab experience |
+| **Why Get It** | Hands-on SOC scenarios direct lab experience |
 | **URL** | blueteamlabs.online |
 
 ---
 
-### TryHackMe — SOC Level 1 Path
+### TryHackMe SOC Level 1 Path
 | Field | Detail |
 |---|---|
 | **Cost** | $14/month |
@@ -78,12 +78,12 @@ unlock doors that experience alone cannot open yet.
 | **Cost** | Free (exam ~$130) |
 | **Difficulty** | Beginner — Intermediate |
 | **Time to Prepare** | 1 month |
-| **Why Get It** | Splunk is the #1 SIEM — proves tool proficiency |
+| **Why Get It** | Splunk is the #1 SIEM proves tool proficiency |
 | **URL** | education.splunk.com |
 
 ---
 
-### Microsoft SC-200 — Security Operations Analyst
+### Microsoft SC-200 Security Operations Analyst
 | Field | Detail |
 |---|---|
 | **Cost** | ~$165 USD |
@@ -100,7 +100,7 @@ unlock doors that experience alone cannot open yet.
 | **Cost** | ~$7,000 USD (employer sponsored) |
 | **Difficulty** | Advanced |
 | **Time to Prepare** | 3–6 months |
-| **Why Get It** | Gold standard in cybersecurity — opens senior doors |
+| **Why Get It** | Gold standard in cybersecurity opens senior doors |
 | **Note** | Pursue after 1–2 years experience |
 
 ---
@@ -143,5 +143,5 @@ YEAR 2-3 — LEVEL UP
 | IBM SkillsBuild | skillsbuild.org | Cybersecurity fundamentals |
 | Google Cybersecurity | coursera.org/google | Entry level certificate |
 | Microsoft Learn | learn.microsoft.com | Azure, Sentinel, Defender |
-| Splunk Free Training | education.splunk.com | Splunk fundamentals |ø
+| Splunk Free Training | education.splunk.com | Splunk fundamentals |
 
