@@ -16,7 +16,7 @@
 
 ---
 
-### Tier 2 — Specialist Cybersecurity Platforms
+### Tier 2 Specialist Cybersecurity Platforms
 
 | Platform | URL | Why Use It |
 |---|---|---|
@@ -28,7 +28,7 @@
 
 ---
 
-### Tier 3 — Networking & Hidden Job Market
+### Tier 3 Networking & Hidden Job Market
 
 | Platform | URL | Why Use It |
 |---|---|---|
