@@ -1,4 +1,4 @@
-# Day 19 – SOC Analyst Job Search Resources
+# SOC Analyst Job Search Resources
 
 ---
 
