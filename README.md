@@ -1,102 +1,74 @@
 # SOC Analyst Job Search Resources
 
----
+Three resources for getting hired: where the jobs actually are, which certifications signal what, and how to answer the questions before someone asks them.
 
-## Summary
+## What This Is
 
-- **Resource Type:** Career Tools & Job Search Strategy
-- **Target Role:** SOC Analyst Tier 1 / Tier 2
-- **Resources Produced:** 3 Job Boards, Certification Roadmap, Interview Prep
-- **Status:** Complete Ready to Deploy
+The technical work opens doors. It does not walk you through them.
 
----
+Job searching is a separate skill from the job. Knowing which platforms surface real entry level roles, which certifications a hiring manager actually scans for, and how to talk about your own work under pressure are three different competencies, and none of them get built by writing detection rules.
 
-## Executive Summary
+This is a personal reference hub, not a portfolio piece. Written to be used, not to be read by a recruiter.
 
-A complete job search resource hub was built for aspiring SOC analysts. Three core resources were produced a curated job board guide covering 15+ platforms, a phased certification roadmap from entry level to advanced, and a comprehensive interview preparation guide covering technical topics, top 20 interview questions with answers, and the STAR method for behavioural questions. This resource is designed to take an analyst from job search to offer letter.
+## Job Boards and Search Strategy
 
----
+[resources/job_boards.md](resources/job_boards.md)
 
-## What's Inside
+15 plus platforms curated for cybersecurity and SOC roles, tiered by how useful they actually are for someone without experience.
 
----
+Also inside: the companies that hire junior analysts and why, search terms that surface the right roles on each platform, alert setup for LinkedIn, Indeed, and Google, application timing and volume rules, and 2026 salary ranges across the tiers.
 
-### 1. Job Boards & Job Search Strategy
+What matters most:
 
-- 15+ job platforms curated specifically for cybersecurity and SOC roles
-- Tiered by effectiveness for entry-level candidates
-- Top companies that hire junior SOC analysts MSSPs, tech giants, financial sector
-- Search terms that surface the right roles on each platform
-- Job alert setup guide for LinkedIn, Indeed, and Google Alerts
-- Strategic application rules timing, volume, and follow-up
-- 2026 salary ranges across all SOC analyst tiers
+MSSPs are the entry point. They hire Tier 1 at volume because their model depends on it, and they will take someone with lab work and no experience where an in house SOC will not.
 
-#### Key Insight:
+Speed beats polish. Applying inside 24 hours of a posting puts you in the pile a recruiter is actually reading. Week two is a different queue.
 
-- MSSPs are the best entry point for Tier 1 SOC roles they hire at volume
-- Applying within 24 hours of a posting gives 3x more visibility from recruiters
-- A curated portfolio on GitHub is the most powerful passive job search tool
+The portfolio works while you sleep. It is the only part of the search that generates inbound rather than outbound.
 
----
+## Certification Roadmap
 
-### 2. Certification Roadmap
+[resources/certification_roadmap.md](resources/certification_roadmap.md)
 
-- Phase 1 — Foundation: CompTIA Network+ and Security+
-- Phase 2 — SOC Specific: CySA+, TryHackMe SOC Level 1, Blue Team Labs Online
-- Phase 3 — Advanced: Splunk Core Certified, SC-200, SANS GIAC GSEC
-- Priority order mapped to career stage — Year 1, Year 1-2, Year 2-3
-- Free study resources for every certification listed
-- Cost and preparation time for each certification
+Phased by career stage rather than listed by prestige.
 
-#### Key Insight:
+Phase 1, foundation, Year 1: Network+ and Security+.
 
-- CompTIA Security+ is the single most required certification in SOC job postings
-- TryHackMe SOC Level 1 path gives hands-on experience before the first role
-- Splunk and SC-200 are the highest ROI certifications after landing a job
+Phase 2, SOC specific, Year 1 to 2: CySA+, TryHackMe SOC Level 1, Blue Team Labs Online.
 
----
+Phase 3, advanced, Year 2 to 3: Splunk Core Certified, SC-200, SANS GIAC GSEC.
 
-### 3. Interview Preparation Guide
+Each entry carries cost, prep time, and free study resources.
 
-- The 3 interview types every SOC candidate faces technical screen, panel, behavioural
-- Must-know topics: networking, security fundamentals, SOC operations, tools
-- Top 20 SOC interview questions with full structured answers
-- STAR method framework with a real portfolio-based example answer
-- 6 smart questions to ask the interviewer
-- Day before interview checklist
+What matters most:
 
-#### Key Insight:
+Security+ is the filter. It appears in more SOC postings than anything else, and its real function is getting past the screen rather than teaching you the job.
 
-- Interviewers test three things technical knowledge, analytical thinking, communication
-- STAR method answers built around real portfolio projects score highest
-- Asking smart questions at the end of an interview signals genuine interest
+TryHackMe SOC Level 1 gives you something to say. A cert proves you studied. A completed path gives you a story about doing.
 
----
+Splunk and SC-200 pay off after the first role, not before. Get hired, find out what the SOC actually runs, then certify on that.
+
+## Interview Preparation
+
+[resources/interview_prep.md](resources/interview_prep.md)
+
+The three interview types: technical screen, panel, behavioural.
+
+Must know topics across networking, security fundamentals, SOC operations, and tooling. Top 20 questions with structured answers. STAR framework with a worked example built on a real project. Six questions to ask them. Day before checklist.
+
+What matters most:
+
+Three things get tested, and only one is technical. Knowledge, analytical thinking, and communication. Candidates who can only do the first one lose to candidates who can do all three less well.
+
+STAR answers need real artifacts behind them. "I would investigate the source IP" is theory. "I pulled the PCAP, filtered on the C2, and the DHCP hostname gave me the machine" is evidence, and it is the same answer with a spine.
+
+The questions you ask are part of the interview. They are the only unscripted signal you control.
 
 ## Resources
 
-- [Job Boards & Strategy](resources/job_boards.md)
+- [Job Boards and Strategy](resources/job_boards.md)
 - [Certification Roadmap](resources/certification_roadmap.md)
 - [Interview Prep Guide](resources/interview_prep.md)
-
----
-
-## Analyst Insight
-
-The technical skills built across Days 1–18 only open doors if you know how to find them and walk through them confidently. Job searching in cybersecurity is a skill in itself knowing which platforms to use, which certifications signal credibility, and how to answer technical questions under pressure is what separates candidates who get interviews from those who get offers. This resource hub bridges the gap between building skills and landing the role.
-
----
-
-## Learning Outcome
-
-- Identify the most effective job platforms for entry-level SOC roles
-- Build a phased certification strategy aligned to career stage
-- Answer the top 20 SOC analyst interview questions with confidence
-- Apply the STAR method to behavioural questions using real portfolio projects
-- Understand salary expectations across SOC analyst tiers
-- Know which companies hire junior SOC analysts and why
-
----
 
 ## Repository Structure
 
@@ -111,6 +83,5 @@ job-search-resources/
 
 ---
 
-## Conclusion
-
-This project transforms the job search from a passive activity into a structured strategy. With curated job boards, a phased certification roadmap, and a complete interview preparation guide, an aspiring SOC analyst has everything needed to move from portfolio to paycheck. Combined with the 28-day project portfolio, this resource hub represents a complete career launch system for the cybersecurity industry.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-WilliamInCyber-blue?style=flat&logo=linkedin)](https://linkedin.com/in/WilliamInCyber)
+[![X](https://img.shields.io/badge/X-WilliamInCyber-black?style=flat&logo=x)](https://x.com/WilliamInCyber)
