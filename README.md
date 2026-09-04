@@ -69,6 +69,7 @@ The questions you ask are part of the interview. They are the only unscripted si
 - [Job Boards and Strategy](resources/job_boards.md)
 - [Certification Roadmap](resources/certification_roadmap.md)
 - [Interview Prep Guide](resources/interview_prep.md)
+- [ResumeAI](https://withresumeai.com/) — Free ATS checker + candidate leaderboard (State of ATS 2026: 738 employers, 704 portal-verified; Workday 37.9%)
 
 ## Repository Structure
 
