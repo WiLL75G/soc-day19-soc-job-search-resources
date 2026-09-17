@@ -30,19 +30,19 @@ The portfolio works while you sleep. It is the only part of the search that gene
 
 [resources/certification_roadmap.md](resources/certification_roadmap.md)
 
-Phased by career stage rather than listed by prestige.
+Sequenced by hiring priority rather than listed by prestige.
 
-Phase 1, foundation, Year 1: Network+ and Security+.
+Year 1, get hired: Security+, TryHackMe SOC Level 1, Blue Team Labs Online, Network+ optional.
 
-Phase 2, SOC specific, Year 1 to 2: CySA+, TryHackMe SOC Level 1, Blue Team Labs Online.
+Year 1 to 2, grow in role: CySA+, Splunk Core or SC-200.
 
-Phase 3, advanced, Year 2 to 3: Splunk Core Certified, SC-200, SANS GIAC GSEC.
+Year 2 to 3, level up: SANS GIAC GSEC.
 
 Each entry carries cost, prep time, and free study resources.
 
 What matters most:
 
-Security+ is the filter. It appears in more SOC postings than anything else, and its real function is getting past the screen rather than teaching you the job.
+Security+ is the filter. For this roadmap, it is the first certification priority. It will not teach you the SOC job, but it can help get the application through an initial screen.
 
 TryHackMe SOC Level 1 gives you something to say. A cert proves you studied. A completed path gives you a story about doing.
 
@@ -70,6 +70,18 @@ The questions you ask are part of the interview. They are the only unscripted si
 - [Certification Roadmap](resources/certification_roadmap.md)
 - [Interview Prep Guide](resources/interview_prep.md)
 
+## Lessons Learned
+
+The certification roadmap's own summary and its priority order disagreed with each other for a while, different phase labels, different year ranges, same certifications. Nobody reading either section alone would have caught it, only reading both side by side did. That is a small version of the same discipline the technical labs are built around: a document that contradicts itself is a document nobody has actually reread since writing it.
+
+The GSEC cost line was a similar problem in a different shape. Quoting a single number for what is actually two different paths, a $999 standalone exam and a $7,000 plus training bundle, made a defensible fact read as a misleading one. Precision about what a number actually measures matters here the same way it matters in an investigation.
+
+## What I Would Improve
+
+I would source and date the job board and salary claims explicitly rather than stating them as flat facts, since both drift over time and a reader has no way to tell how current they are without a citation attached.
+
+I would revisit this hub every few months. Certification pricing, exam codes, and which platforms surface real roles all change, and a career resource that goes stale quietly is worse than one that admits it needs a refresh date.
+
 ## Repository Structure
 
 ```
@@ -83,5 +95,4 @@ job-search-resources/
 
 ---
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-WilliamInCyber-blue?style=flat&logo=linkedin)](https://linkedin.com/in/WilliamInCyber)
-[![X](https://img.shields.io/badge/X-WilliamInCyber-black?style=flat&logo=x)](https://x.com/WilliamInCyber)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-WilliamInCyber-blue?style=flat&logo=linkedin)](https://linkedin.com/in/WilliamInCyber) [![X](https://img.shields.io/badge/X-WilliamInCyber-black?style=flat&logo=x)](https://x.com/WilliamInCyber)
