@@ -1,10 +1,10 @@
 # SOC Analyst Certification Roadmap
 
-Certifications get you past the screen. They do not get you hired.
+Certifications can help strengthen an application, but they do not replace practical skills.
 
-The value is asymmetric and worth being clear about. A cert proves you sat an exam. Nothing more. What it buys is the chance to be read by a human instead of filtered by a keyword match, and for someone without experience that is the whole point.
+For someone building toward an entry level SOC role, sequence matters more than collecting as many certifications as possible.
 
-Sequence matters more than count. Three in the right order beats six in the wrong one.
+The goal of this roadmap is to combine foundational certification study with practical SOC training, then move toward more specialized certifications once the technology used in the role is known.
 
 ---
 
@@ -14,14 +14,18 @@ Sequence matters more than count. Three in the right order beats six in the wron
 
 | Field | Detail |
 |---|---|
-| Cost | ~$392 USD |
+| Cost | $439 USD as of the June 2026 CompTIA price increase, confirm the current figure before budgeting since CompTIA revises pricing periodically |
 | Difficulty | Beginner to medium |
 | Prep time | 2 to 3 months |
 | Exam code | SY0-701 |
-| Why | The filter. Appears in more SOC postings than anything else, and DoD 8570 makes it mandatory for a large slice of the market |
-| Study | Professor Messer (free), Jason Dion practice exams, CompTIA CertMaster |
+| Why | Broad security foundation and a useful qualification for many entry level cybersecurity applications |
+| Study | Professor Messer, Jason Dion practice exams, CompTIA CertMaster |
 
-This is the one that is not optional. Not because it teaches the job, but because its absence ends applications before a human reads them.
+Security+ is the filter. For this roadmap, it is the first certification priority. It will not teach you the SOC job, but it can help get the application through an initial screen.
+
+It does not demonstrate hands on SOC ability by itself.
+
+That is why the certification should sit alongside practical lab work rather than replace it.
 
 ---
 
@@ -29,30 +33,38 @@ This is the one that is not optional. Not because it teaches the job, but becaus
 
 | Field | Detail |
 |---|---|
-| Cost | ~$338 USD |
+| Cost | $399 USD as of the June 2026 CompTIA price increase, confirm the current figure before budgeting |
 | Difficulty | Beginner |
 | Prep time | 1 to 2 months |
 | Exam code | N10-009 |
-| Why | Networking fundamentals underpin every SOC investigation |
-| Study | Professor Messer (free), Mike Meyers Udemy |
+| Why | Strengthens networking fundamentals used throughout SOC investigations |
+| Study | Professor Messer, Mike Meyers Udemy |
 
-Honest note: Network+ is rarely required in SOC postings. Security+ is. If the networking is already solid from lab work, this is skippable and the time goes into Security+ instead. Skip it deliberately, not by accident.
+Network+ is optional in this roadmap.
+
+Networking knowledge is essential for SOC work, but the certification itself may not be necessary if those fundamentals are already strong.
+
+The decision should depend on the knowledge gap rather than simply adding another certification.
 
 ---
 
-## Phase 2, SOC Specific
+## Phase 2, SOC Specific Practice
 
 ### TryHackMe SOC Level 1
 
 | Field | Detail |
 |---|---|
-| Cost | $14/month |
+| Cost | $14 per month as of this writing, subscription pricing can change, confirm before purchasing |
 | Difficulty | Beginner |
 | Time | 60 to 80 hours |
-| Why | Structured hands on SOC work, gives you something to talk about |
+| Why | Structured hands on SOC exercises and investigation practice |
 | URL | tryhackme.com/path/outline/soclevel1 |
 
-The interview value is higher than the certificate value. A cert lets you say you studied. A completed path lets you say what you did.
+The main value here is practical experience.
+
+A certification or completion badge shows that training was completed.
+
+The stronger interview value comes from being able to explain what was investigated, what evidence was used, and how conclusions were reached.
 
 ---
 
@@ -60,11 +72,17 @@ The interview value is higher than the certificate value. A cert lets you say yo
 
 | Field | Detail |
 |---|---|
-| Cost | Free tier, paid available |
+| Cost | Free tier available, paid tiers add features, confirm current plans |
 | Difficulty | Beginner to advanced |
 | Time | Ongoing |
-| Why | Investigation scenarios, closest thing to real triage without a job |
+| Why | Investigation scenarios covering practical blue team skills |
 | URL | blueteamlabs.online |
+
+Blue Team Labs Online can complement certification study with investigation based exercises.
+
+The objective is not simply to complete challenges.
+
+The useful outcome is developing repeatable investigation habits and creating technical examples that can be discussed during interviews.
 
 ---
 
@@ -72,14 +90,16 @@ The interview value is higher than the certificate value. A cert lets you say yo
 
 | Field | Detail |
 |---|---|
-| Cost | ~$392 USD |
+| Cost | $439 USD as of the June 2026 CompTIA price increase, confirm the current figure before budgeting |
 | Difficulty | Intermediate |
 | Prep time | 2 to 3 months |
-| Exam code | CS0-003 |
-| Why | Maps directly to the SOC analyst role, threat detection focused |
+| Exam code | CS0-003 through December 22, 2026, when it retires. CS0-004 launched in June 2026 and is the code to study for after that date |
+| Why | Security analytics, detection, vulnerability management, and incident response |
 | Study | Mike Chapple Udemy, CompTIA study guide |
 
-Worth doing after the first role rather than before. It is a better second cert than second-and-a-half attempt at getting hired.
+CySA+ becomes more useful after the foundations are established.
+
+For this roadmap, it is positioned after the initial job search stage rather than being treated as a requirement for the first SOC role.
 
 ---
 
@@ -89,11 +109,17 @@ Worth doing after the first role rather than before. It is a better second cert 
 
 | Field | Detail |
 |---|---|
-| Cost | Training free, exam ~$130 |
+| Cost | Training is free, the exam is approximately $130 per attempt, confirm before registering |
 | Difficulty | Beginner to intermediate |
-| Prep time | 1 month |
-| Why | Splunk is the most widely deployed SIEM, proves tool proficiency |
+| Prep time | Approximately 1 month depending on existing Splunk experience |
+| Why | Validates foundational Splunk knowledge |
 | URL | education.splunk.com |
+
+Splunk certification makes the most sense when Splunk is relevant to the target role or working environment.
+
+Practical Splunk projects can demonstrate experience before certification.
+
+Certification then provides an additional formal signal.
 
 ---
 
@@ -101,13 +127,15 @@ Worth doing after the first role rather than before. It is a better second cert 
 
 | Field | Detail |
 |---|---|
-| Cost | ~$165 USD |
+| Cost | Approximately $165 USD, confirm regional Microsoft exam pricing before registering |
 | Difficulty | Intermediate |
 | Prep time | 2 to 3 months |
-| Why | Sentinel and Defender proficiency |
-| Study | Microsoft Learn (free), John Savill YouTube |
+| Why | Microsoft Sentinel and Defender focused security operations skills |
+| Study | Microsoft Learn, John Savill YouTube |
 
-Splunk or SC-200, not both, and not yet. Get hired, find out what the SOC actually runs, certify on that. Certifying on the wrong SIEM is money spent proving something nobody asked about.
+SC-200 is useful for analysts working with Microsoft's security ecosystem.
+
+The decision between Splunk certification and SC-200 should therefore depend on the technologies used by the target SOC rather than trying to collect both immediately.
 
 ---
 
@@ -115,19 +143,23 @@ Splunk or SC-200, not both, and not yet. Get hired, find out what the SOC actual
 
 | Field | Detail |
 |---|---|
-| Cost | ~$7,000 USD |
-| Difficulty | Advanced |
-| Prep time | 3 to 6 months |
-| Why | Carries real weight, opens senior conversations |
-| Note | Employer sponsored. Pursue after 1 to 2 years experience |
+| Cost | The standalone GIAC exam attempt is approximately $999. The path most candidates actually take, SANS SEC401 training plus the exam, runs roughly $7,000 to $8,700 depending on format. Confirm current pricing on both paths before committing |
+| Difficulty | Intermediate to advanced |
+| Prep time | Depends heavily on prior experience and whether SANS training is included |
+| Why | Broad security knowledge with a respected practical security focus |
+| Note | Consider employer sponsorship for the SANS training path specifically, the standalone exam is a much smaller commitment |
 
-Do not self fund this. If an employer will not pay for it, it is not the right time.
+The important pricing distinction is between the GIAC certification attempt and SANS training.
+
+They should not be presented as the same purchase. In practice, most mentions of GSEC in job postings and hiring conversations mean the full SANS trained path rather than the standalone exam, so budget and timeline expectations should account for that.
+
+For this roadmap, GSEC is a later career option rather than an entry level requirement.
 
 ---
 
 ## Priority Order
 
-```
+```text
 YEAR 1, GET HIRED
 ┌─────────────────────────────────────┐
 │  1. CompTIA Security+               │
@@ -148,11 +180,31 @@ YEAR 2 TO 3, LEVEL UP
 └─────────────────────────────────────┘
 ```
 
-Year 1 is a hiring plan, not a learning plan. Everything in it either gets you past a filter or gives you something to say in a room.
+This order is a career planning framework rather than a requirement.
+
+Year 1 prioritizes one broad security certification and practical SOC exercises.
+
+Later stages introduce certifications that become more useful when they match the analyst's responsibilities and technology stack.
 
 ---
 
-## Free Study Resources
+## How I Would Use This Roadmap
+
+The roadmap is not a checklist where every item must be completed.
+
+Before starting another certification, I would ask:
+
+1. Does this close an actual knowledge gap?
+2. Does it appear in roles I am targeting?
+3. Can I demonstrate the same skill through practical work?
+4. Does it match technology I am likely to use?
+5. Is certification currently a better investment than additional lab or interview preparation?
+
+If the answer is unclear, collecting another certification may not be the highest priority.
+
+---
+
+## Free and Low Cost Study Resources
 
 | Resource | URL | Covers |
 |---|---|---|
@@ -165,3 +217,18 @@ Year 1 is a hiring plan, not a learning plan. Everything in it either gets you p
 | Microsoft Learn | learn.microsoft.com | Azure, Sentinel, Defender |
 | Splunk Free Training | education.splunk.com | Splunk fundamentals |
 
+Availability, pricing, course names, and certification versions can change.
+
+Verify current information on the provider's official website before beginning a study plan.
+
+---
+
+## Final Principle
+
+Certifications can help establish foundational knowledge and strengthen an application.
+
+Practical work demonstrates what you can do with that knowledge.
+
+The strongest path combines both:
+
+**Learn the fundamentals, practise the skills, document the evidence, explain the work clearly.**
