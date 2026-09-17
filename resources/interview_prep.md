@@ -1,18 +1,58 @@
 # SOC Analyst Interview Preparation Guide
 
-Three things get tested: technical knowledge, analytical thinking, communication.
+SOC interviews test more than technical knowledge.
 
-Only one of them is technical, and it is the one candidates over prepare. Someone who knows less but explains their reasoning clearly beats someone who knows more and cannot walk through it. The interview is not a quiz. It is a demonstration of how you think out loud.
+Three areas matter:
+
+1. Technical knowledge
+2. Analytical thinking
+3. Communication
+
+Knowing an answer is useful.
+
+Being able to explain how you reached it is what demonstrates analyst thinking.
 
 ---
 
 ## The Three Interview Types
 
-**Technical screen**, 30 to 45 minutes, phone or video. Networking, security fundamentals, SOC operations. They are checking whether you speak the language before spending a panel's time on you.
+### Technical Screen
 
-**Technical panel**, 60 to 90 minutes. Scenario questions, tool knowledge, incident response. They are checking whether you think like an analyst. This is where the job is won or lost.
+Usually a shorter interview focused on foundational knowledge.
 
-**Behavioural**, 30 to 45 minutes, HR. STAR answers, culture fit. They are checking whether the team can work with you at 3am.
+Common areas include:
+
+- Networking
+- Security fundamentals
+- SOC terminology
+- Basic investigation concepts
+- Tools listed in the job description
+
+The objective is usually to establish whether the candidate understands the fundamentals required for the role.
+
+### Technical Panel
+
+Often more scenario focused.
+
+Questions may cover:
+
+- Alert triage
+- Incident response
+- Investigation methodology
+- SIEM usage
+- Network analysis
+- Endpoint evidence
+- Escalation decisions
+
+The important part is not only reaching the correct conclusion.
+
+Explain the evidence you would examine and why.
+
+### Behavioural Interview
+
+Behavioural interviews focus on how you communicate, work with others, handle problems, and learn.
+
+The STAR method can help structure these answers.
 
 ---
 
@@ -20,249 +60,512 @@ Only one of them is technical, and it is the one candidates over prepare. Someon
 
 ### Networking Fundamentals
 
-```
-OSI model, all 7 layers and what happens at each
-TCP vs UDP, differences and use cases
-TCP three way handshake, SYN, SYN-ACK, ACK
-Common ports:
-  22 SSH, 25 SMTP, 53 DNS, 80 HTTP, 443 HTTPS,
-  445 SMB, 3306 MySQL, 3389 RDP
-DNS, how resolution works, A records, MX records, TTL
-DHCP, how IP assignment works and what it reveals
-Subnetting, CIDR notation
-Firewalls, stateful vs stateless
+```text
+OSI model and the purpose of each layer
+
+TCP vs UDP
+
+TCP three way handshake
+SYN, SYN ACK, ACK
+
+Common ports
+22    SSH
+25    SMTP
+53    DNS
+80    HTTP
+443   HTTPS
+445   SMB
+3306  MySQL
+3389  RDP
+
+DNS resolution
+A records
+MX records
+TTL
+
+DHCP
+IP assignment
+Lease information
+Hostname and MAC correlation
+
+Subnetting
+CIDR notation
+
+Stateful vs stateless firewalls
 ```
 
-### Security Fundamentals
+Do not only memorize definitions.
 
-```
-CIA triad, confidentiality, integrity, availability
-Defence in depth, layered controls
-Least privilege, only the access needed
-Zero trust, never trust, always verify
-Encryption, symmetric vs asymmetric
-Hashing, MD5 vs SHA256 and why the difference matters
-PKI, certificates, how HTTPS actually works
-MFA, the types and why it breaks most attacks
-```
+Connect networking concepts to investigations.
 
-### SOC Operations
-
-```
-Alert triage, severity levels and what drives them
-True positive vs false positive, how you decide
-Escalation, when and what goes in the handoff
-Incident response lifecycle:
-  Detection, triage, containment, investigation,
-  eradication, recovery, lessons learned
-Chain of custody, preserving evidence before remediation
-Documentation, logging every action taken
-```
-
-### Tools
-
-```
-SIEM: Splunk, Microsoft Sentinel, IBM QRadar
-EDR: CrowdStrike, Carbon Black, Microsoft Defender
-Wireshark, packet capture and analysis
-Nmap, port scanning and host discovery
-VirusTotal, AbuseIPDB, IOC enrichment
-MITRE ATT&CK, adversary technique mapping
-```
-
-Honest rule: know the difference between tools you have used and tools you have read about. If a JD names QRadar, CrowdStrike, or Defender XDR and you have not touched them, the answer is transferable SIEM and EDR concepts, not implied hands on. Getting caught inflating one tool costs you every other claim in the room.
+For example, an IP address may be dynamically assigned. DHCP evidence can provide additional context such as a hostname and MAC address associated with that lease during the observed period.
 
 ---
 
-## Interview Questions and Answers
+## Security Fundamentals
 
-### "Walk me through what you do when you receive a high severity alert."
+```text
+CIA triad
+Confidentiality
+Integrity
+Availability
 
-The most common opener. They are watching for structure, not speed.
+Defence in depth
 
+Least privilege
+
+Zero trust concepts
+
+Symmetric and asymmetric encryption
+
+Hashing
+
+PKI and certificates
+
+Multifactor authentication
 ```
-1. Acknowledge the alert in the ticketing system
-2. Read the alert detail: source, destination, rule
-   triggered, timestamp
-3. Check for false positive indicators before anything else
-4. Enrich the IOCs: VirusTotal, AbuseIPDB, internal context
-5. Correlate: is this isolated, or has this source
-   appeared before?
-6. Contain if confirmed: block the source, isolate the host
-7. Document every action as you take it
-8. Escalate with full triage notes, not just the alert
-```
 
-Step 5 is the one that separates candidates. Anyone can triage an alert. Asking whether it connects to something else is what makes you useful.
+The goal is to understand what these concepts mean operationally rather than only memorizing definitions.
 
 ---
 
-### "What is the difference between a virus and a worm?"
+## SOC Operations
 
-```
-Virus: attaches to a legitimate file, requires a human
-       action to spread
-Worm:  self replicating across the network, no human
-       needed, which is why it scales
+```text
+Alert triage
+
+Severity and priority
+
+True positive
+False positive
+
+Escalation
+
+Incident response
+
+Evidence preservation
+
+Documentation
+
+IOC enrichment
+
+Event correlation
+
+Investigation scoping
 ```
 
-The distinction that matters operationally: a worm means containment is a race. A virus means containment is a search.
+A useful investigation habit is separating:
+
+```text
+Observed
+Inferred
+Unknown
+```
+
+That prevents assumptions from becoming conclusions.
 
 ---
 
-### "What is a false positive and how do you handle it?"
+## Tools
 
+Common SOC and investigation tools include:
+
+```text
+SIEM
+Splunk
+Microsoft Sentinel
+IBM QRadar
+
+EDR
+Microsoft Defender
+CrowdStrike
+Carbon Black
+
+Network analysis
+Wireshark
+
+Network discovery
+Nmap
+
+Threat intelligence
+VirusTotal
+AbuseIPDB
+
+Frameworks
+MITRE ATT&CK
 ```
-An alert that fired without a real threat behind it.
 
-1. Investigate fully before calling it false
-2. Document why it is false, not just that it is
-3. Tune the rule so it does not fire on this again
-4. Never dismiss an alert without investigation
-```
+### Honest Tool Rule
 
-The trap in this question is speed. The wrong answer is anything that sounds like you close alerts quickly. Alert fatigue is real and every SOC has it, but "I'd dismiss it" is the answer that ends the interview.
+Know the difference between tools you have actually used and tools you have only studied.
 
-Step 3 is what they actually want to hear. A false positive that recurs is a rule problem, not an alert problem.
+If an employer asks about a product you have not used, explain the transferable concepts you understand instead of implying hands on experience.
+
+For example:
+
+> I have not used QRadar directly, but I have worked with Splunk and understand the SIEM workflow of searching telemetry, correlating events, investigating alerts, and documenting findings.
+
+That is stronger than overstating experience.
 
 ---
 
-### "Explain the OSI model."
+# Common SOC Interview Questions
 
-```
-7  Application  - HTTP, DNS, SMTP
-6  Presentation - Encryption, compression
-5  Session      - Session management
-4  Transport    - TCP, UDP, ports
-3  Network      - IP addressing, routing
-2  Data Link    - MAC addresses, switches
-1  Physical     - Cables, hardware
+## "Walk me through what you would do when you receive a high severity alert."
+
+A structured answer could be:
+
+```text
+1. Review the alert details.
+
+2. Identify the source, destination, affected asset,
+   timestamp, detection rule, and available context.
+
+3. Validate the underlying telemetry.
+
+4. Look for evidence that could explain the activity.
+
+5. Enrich relevant indicators when appropriate.
+
+6. Correlate the alert with surrounding activity.
+
+7. Determine scope.
+
+8. Document the evidence and current assessment.
+
+9. Follow the organisation's containment and
+   escalation procedure based on the evidence.
 ```
 
-Do not just recite it. Tie it to work: a MAC address is layer 2, which is why it identifies a device even when the IP changes. Ports are layer 4, which is why a firewall rule on 443 does not care what protocol is riding on it.
+Containment should follow the organization's process and the evidence available.
+
+A high severity label alone does not automatically establish compromise.
 
 ---
 
-### "What would you do if you suspected an insider threat?"
+## "What is the difference between a virus and a worm?"
 
-```
-1. Do not confront the employee
-2. Document all activity with timestamps
-3. Escalate to your manager and HR immediately
-4. Preserve log evidence before anything changes
-5. Follow the organisation's insider threat procedure
-6. Maintain confidentiality throughout
+```text
+Virus
+
+Malicious code that typically attaches to or modifies
+another file or program and depends on execution to
+activate or propagate.
+
+Worm
+
+Malware designed to self propagate between systems,
+often using network accessible vulnerabilities or
+services without requiring the same user driven
+distribution mechanism.
 ```
 
-This question is not testing investigation skill. It is testing whether you know this one is not yours to run. Legal and HR own it, and a Tier 1 analyst who starts digging on their own creates a problem the organisation cannot fix later.
+The operational difference matters because self propagating malware can expand scope rapidly.
 
 ---
 
-### "What is the difference between IDS and IPS?"
+## "What is a false positive and how do you handle it?"
 
-```
-IDS: monitors and alerts, sits passively out of band
-IPS: monitors and blocks, sits inline
+A false positive occurs when a detection fires on activity that investigation determines is benign.
+
+```text
+1. Investigate before assigning the verdict.
+
+2. Document the evidence supporting the benign
+   explanation.
+
+3. Determine whether the activity is isolated or
+   repeatable.
+
+4. If a repeatable benign pattern exists, document
+   the pattern and recommend tuning through the
+   organisation's detection engineering process.
+
+5. Close or escalate according to procedure.
 ```
 
-The real answer is the tradeoff. An IPS false positive blocks legitimate traffic and someone's day stops. An IDS false positive costs an analyst ten minutes. That is why plenty of mature environments still run detection in front of prevention.
+A Tier 1 analyst may identify and document a tuning opportunity without necessarily having authority to modify the production rule.
+
+One false positive is also not automatically enough evidence to justify suppressing future alerts.
 
 ---
 
-### "How do you investigate a phishing email?"
+## "Explain the OSI model."
 
-```
-1. Do not click anything
-2. Analyse the headers: sending IP, Reply-To,
-   SPF and DKIM status
-3. Check the sender domain on VirusTotal
-4. Check links on VirusTotal and URLScan, do not visit them
-5. Check who else received it
-6. Quarantine at the gateway
-7. Notify recipients
-8. Document and escalate
+```text
+7  Application     HTTP, DNS, SMTP
+
+6  Presentation    Encoding, encryption, data formatting
+
+5  Session         Session establishment and management
+
+4  Transport       TCP, UDP, ports
+
+3  Network         IP addressing and routing
+
+2  Data Link       Frames, MAC addressing
+
+1  Physical        Physical transmission media and signals
 ```
 
-Two things to say out loud. The Reply-To is the most reliable indicator in the header, because the attacker needs replies to reach them and cannot fake that. And step 5 is the one that determines scope. Quarantining one email stops one victim. Finding the other twenty recipients is the incident.
+Do not stop at memorizing the seven layers.
+
+Connect them to investigations.
+
+For example, IP addresses operate at Layer 3 while TCP and UDP ports operate at Layer 4.
+
+Understanding that distinction helps when interpreting packet captures and firewall activity.
 
 ---
 
-### "What is MITRE ATT&CK?"
+## "What would you do if you suspected an insider threat?"
 
+```text
+1. Do not confront the person.
+
+2. Preserve relevant evidence.
+
+3. Document observations carefully.
+
+4. Maintain confidentiality.
+
+5. Follow the organisation's insider threat and
+   escalation procedures.
+
+6. Involve the appropriate authorized teams.
 ```
-A knowledge base of adversary tactics and techniques
-built from real world observation.
 
-Used to:
-- Map observed activity to known attacker behaviour
-- Find gaps in detection coverage
-- Communicate findings in a shared vocabulary
-- Build detections against known TTPs
-```
+Ownership varies between organizations.
 
-Do not stop at the definition. The gap analysis use is the one that shows you understand it as a tool rather than a poster: if a technique has no rule behind it, that gap is visible before an incident finds it for you.
+The important principle is not to independently expand a sensitive investigation outside your authority.
 
 ---
 
-## STAR Method
+## "What is the difference between IDS and IPS?"
 
-```
-S  Situation, set the context
-T  Task, what you were responsible for
-A  Action, what you specifically did
-R  Result, what came out of it
-```
+```text
+IDS
 
-A is the section that carries the answer. Most people spend three sentences on S and one on A. Invert that.
+Detects suspicious activity and generates alerts.
 
-### Example, "Tell me about a time you worked under pressure"
+IPS
 
-```
-S: I ran a full SOC shift simulation with three alerts
-   firing across an eight hour window
-T: Triage all three, determine whether they were related,
-   and produce an incident report
-A: I prioritised by severity, worked each alert to a
-   verdict, and recorded the IOCs into a shared table
-   rather than closing each ticket separately. That is
-   what surfaced the same Tor exit node in all three
-R: I correlated them into one campaign, mapped the full
-   chain from brute force to exfiltration, and produced
-   the handoff package
+Can detect suspicious activity and take preventive
+action because it operates inline with traffic.
 ```
 
-The specific detail is what makes it land. "I correlated them" is a claim. "I recorded IOCs into a shared table rather than closing each ticket separately, and that is what surfaced it" is a method, and a method is what they are hiring.
+The operational difference includes the impact of false positives.
 
-Rule for STAR answers: they need a real artifact behind them. If you cannot name the IP, the rule, the event ID, or the finding, it is a story rather than evidence.
+An incorrect IPS decision can interrupt legitimate traffic.
+
+An IDS alert normally requires investigation before action is taken.
 
 ---
 
-## Questions to Ask Them
+## "How would you investigate a phishing email?"
 
-These are part of the interview. They are the one unscripted signal you control.
+```text
+1. Preserve the message and avoid interacting with
+   suspicious links or attachments.
 
+2. Review available email headers.
+
+3. Examine sender and Reply To information.
+
+4. Review authentication results such as SPF, DKIM,
+   and DMARC when available.
+
+5. Extract relevant domains, URLs, IP addresses,
+   attachment hashes, and other indicators.
+
+6. Enrich indicators using appropriate threat
+   intelligence sources.
+
+7. Determine whether other recipients received the
+   message.
+
+8. Review available endpoint, email gateway, proxy,
+   or identity telemetry for evidence of interaction.
+
+9. Determine scope and document the findings.
+
+10. Follow the organisation's quarantine,
+    containment, and escalation procedures.
 ```
-1. What does a typical day look like for a Tier 1 analyst here?
-2. What SIEM and tools does the team run?
-3. How does escalation work between Tier 1 and Tier 2?
-4. What does onboarding look like?
-5. What development and certification support exists?
-6. What is the biggest challenge the SOC faces right now?
-```
 
-Question 6 is the one that works. It is the only one that gets an honest answer, and what they say tells you whether the role is a job or a fire.
+A mismatch between `From` and `Reply-To` can be useful evidence, but neither field should be treated as inherently trustworthy.
+
+Scope also matters.
+
+Finding one malicious email does not answer whether the same campaign reached additional recipients.
 
 ---
 
-## Day Before Checklist
+## "What is MITRE ATT&CK?"
 
+MITRE ATT&CK is a knowledge base used to describe adversary tactics and techniques based on observed behaviour.
+
+It can help analysts:
+
+```text
+Map observed behaviour
+
+Communicate findings using shared terminology
+
+Understand detection coverage
+
+Identify coverage gaps
+
+Support detection engineering
+
+Organize threat behaviour
 ```
-[ ] Review portfolio projects, know every detail
-[ ] Know your resume line by line, every claim defensible
-[ ] Read the company's recent security news
-[ ] Prepare 3 STAR answers with real artifacts behind them
-[ ] Review OSI model, CIA triad, IR lifecycle
-[ ] Prepare your "tell me about yourself"
-[ ] Know which tools you have used and which you have not
-[ ] Test audio and video if remote
-[ ] Sleep
+
+ATT&CK should describe behaviour supported by evidence.
+
+A malware family being capable of a technique does not mean that technique occurred in the investigated activity.
+
+---
+
+# STAR Method
+
+```text
+S  Situation
+
+T  Task
+
+A  Action
+
+R  Result
+```
+
+The Action section should explain what you specifically did.
+
+Avoid spending most of the answer describing the background.
+
+---
+
+## Example
+
+### "Tell me about a time you worked through multiple security alerts."
+
+**Situation**
+
+I completed a SOC shift simulation involving three alerts across a simulated workday.
+
+**Task**
+
+I needed to triage the alerts independently, determine whether any were related, document the evidence, and prepare a handoff.
+
+**Action**
+
+I investigated each alert separately before correlating their indicators.
+
+I recorded the important IP addresses, affected systems, and investigation findings rather than treating each alert as an isolated ticket.
+
+That exposed two different relationships.
+
+The first two alerts shared the same external IP address.
+
+The first and third alerts involved the same internal host.
+
+I treated those relationships differently because the external IP was a Tor exit node, making that correlation weaker than the shared affected endpoint.
+
+**Result**
+
+The three alerts were documented as a correlated incident scenario with the strength of each relationship clearly explained and an end of shift handoff prepared.
+
+---
+
+The useful part of that answer is not:
+
+> I correlated three alerts.
+
+It is explaining **how** the correlation was discovered and why one relationship was stronger than another.
+
+Use portfolio projects this way.
+
+They provide real artifacts behind interview answers without implying professional SOC experience.
+
+---
+
+# Questions to Ask the Employer
+
+Useful questions include:
+
+```text
+1. What does a typical day look like for a Tier 1
+   analyst on this team?
+
+2. Which SIEM, EDR, and case management tools does
+   the SOC use?
+
+3. How does escalation work between Tier 1 and
+   Tier 2?
+
+4. What does onboarding look like for a new analyst?
+
+5. What training and certification support is
+   available?
+
+6. What are some of the biggest operational
+   challenges the SOC is currently working through?
+```
+
+The answers can reveal how the SOC operates, what analysts are expected to handle, and how much support exists for development.
+
+---
+
+# Day Before Checklist
+
+```text
+[ ] Review the job description
+
+[ ] Review portfolio projects relevant to the role
+
+[ ] Know every claim on the CV
+
+[ ] Research the company and its security services
+
+[ ] Prepare three STAR examples backed by real work
+
+[ ] Review networking and security fundamentals
+
+[ ] Prepare a concise introduction
+
+[ ] Know which tools you have used directly
+
+[ ] Know which tools you have only studied
+
+[ ] Prepare questions for the interviewer
+
+[ ] Test audio and video for a remote interview
+```
+
+---
+
+# Final Principle
+
+Do not try to sound like an analyst with years of experience.
+
+Explain the work you have actually done.
+
+When answering a technical question, move through:
+
+```text
+What I observed
+      ↓
+What I would investigate
+      ↓
+What evidence I would validate
+      ↓
+What I can conclude
+      ↓
+What remains unknown
+      ↓
+What I would document or escalate
+```
+
+The objective is not to memorize the perfect interview answer.
+
+It is to make your reasoning clear, evidence based, and defensible.
